@@ -1,5 +1,4 @@
-
-        apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: cleanup
@@ -42,4 +41,5 @@ spec:
       script: |
         #!/usr/bin/env sh
         set -eu
-        python -m nose $(params.args)
+        python -m nose $(params.args)git status
+        
